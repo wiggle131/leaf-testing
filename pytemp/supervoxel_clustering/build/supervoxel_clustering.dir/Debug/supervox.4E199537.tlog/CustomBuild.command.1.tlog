@@ -1,0 +1,10 @@
+^C:\USERS\MAXIM\DOWNLOADS\PYTEMP\SUPERVOXEL_CLUSTERING\CMAKELISTS.TXT
+setlocal
+C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/maxim/Downloads/pytemp/supervoxel_clustering -BC:/Users/maxim/Downloads/pytemp/supervoxel_clustering/build --check-stamp-file C:/Users/maxim/Downloads/pytemp/supervoxel_clustering/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
